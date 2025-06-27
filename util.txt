@@ -1,0 +1,8 @@
+Util commands:
+
+cordova platform rm ios                
+cordova platform add ios@6.2.0
+cordova plugin rm nodejs-mobile-cordova
+cordova plugin add nodejs-mobile-cordova
+cordova prepare ios
+open platforms/ios/MyApp.xcworkspace
