@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.tuo.bundleid" version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>MyApp</name>
+    <description>Sample Apache Cordova App con Node.js embedded</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+
+    <!-- Punto di ingresso HTML -->
+    <content src="index.html" />
+
+    <!-- Permessi di rete -->
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <!-- Permetti navigazione verso server locale -->
+    <allow-navigation href="http://localhost:3000/*" />
+    <allow-navigation href="http://127.0.0.1:3000/*" />
+    <allow-navigation href="*" />
+
+    <!-- Plugin Node.js mobile e configurazioni iOS -->
+    <platform name="ios">
+  <edit-config target="NSAppTransportSecurity" file="*-Info.plist" mode="merge">
+    <dict>
+      <key>NSAllowsArbitraryLoads</key>
+      <true/>
+      <key>NSExceptionDomains</key>
+      <dict>
+        <key>localhost</key>
+        <dict>
+          <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+          <key>NSIncludesSubdomains</key>
+          <true/>
+        </dict>
+      </dict>
+    </dict>
+  </edit-config>
+</platform>
+
+
+</widget>

@@ -1,0 +1,31 @@
+{
+  "name": "com.tuo.bundleid",
+  "displayName": "MyApp",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "scripts": {
+    "build-ios": "cordova build ios",
+    "run-ios": "cordova run ios",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-ios": "^6.2.0",
+    "nodejs-mobile-cordova": "^0.4.3"
+  },
+  "cordova": {
+    "platforms": [
+      "ios"
+    ],
+    "plugins": {
+      "nodejs-mobile-cordova": {}
+    }
+  },
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}
